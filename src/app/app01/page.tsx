@@ -16,14 +16,16 @@ const getData = async () => {
     });
 };
 
-export default async function App01Page({
-    searchParams
-}: {
-    searchParams: { [key: string]: string }
-}) {
-    if (searchParams.error == 'true') {
-        throw new Error('서버에서 발생');
-    }
+export default async function App01Page(
+// {
+//     searchParams
+// }: {
+//     searchParams: { [key: string]: string }
+// }
+) {
+    // if (searchParams.error == 'true') {
+    //     throw new Error('서버에서 발생');
+    // }
     const Tdata = await getData();
     return (
         <div className='w-full h-screen 
